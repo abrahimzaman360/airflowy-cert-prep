@@ -37,7 +37,7 @@ uv init && uv pip install -r requirements.txt
 
 Here are the useful links to Astronomer's Airflow Certification:
 
-Astronomer's Airflow Certification
+- Astronomer's Airflow Certification
 [Link to Certification](https://academy.astronomer.io/certification-exam-apache-airflow-3-fundamentals)
 
 - Astronomer's Airflow Learning Path:
