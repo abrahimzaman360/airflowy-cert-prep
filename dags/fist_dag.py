@@ -1,3 +1,7 @@
+"""
+This is a DAG documentation specific to current DAG below!
+"""
+
 from airflow.sdk import Asset
 from airflow.decorators import dag, task
 from pendulum import datetime
@@ -9,9 +13,10 @@ import requests
     dag_id="first_dag",
     dag_display_name="First DAG",
     start_date=datetime(2024, 1, 1),
-    schedule="@hourly",
+    schedule="0/5 * * * *",  # run after every 5 seconds
     catchup=False,
     tags=["first_dag"],
+    doc_md=__doc__,
 )
 def init_dag():
     @task(outlets=[Asset("first_asset_dag")])
